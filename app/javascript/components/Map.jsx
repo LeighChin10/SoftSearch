@@ -33,6 +33,7 @@ const Map = ({ API_KEY, jobs, all_skills, userID }) => {
     // get current jobs 
     const indexOfLastJob = currentPage * jobsPerPage
     const indexOfFirstJob = indexOfLastJob - jobsPerPage
+    console.log("INSIDE MAP COMPONENT",API_KEY)
     const currentJobs = filteredJobs.slice(indexOfFirstJob,indexOfLastJob)
     const paginate = pageNumber => setCurrentPage(pageNumber)
 

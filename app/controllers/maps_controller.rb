@@ -2,6 +2,7 @@ class MapsController < ApplicationController
     skip_before_action :verify_authenticity_token
 
     def show 
+        puts "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#{ENV["MAPBOX_KEY"]}"
         location = params['location']
         coords = [-80.1918,25.7617]
 
